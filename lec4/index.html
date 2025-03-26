@@ -3,8 +3,58 @@
     <head>
         <title>Page Title</title>
         <link rel="stylesheet" href="./styles.css">
+        <style>
+            body {
+                background-color: lightgray;
+            }
+            h1 {
+                color: green;
+            }
+        </style>
     </head>
     <body>
-        <h1 style="color: blue; font-size: 30pz;">Hello World</h1>
+        <h1 style="color: blue; font-size: 30px;">Hello World</h1>
+        <h2 id="header">HEADER</h2>
+        <p>Lorem ipsum dolor 
+            <span class="highlight">
+                sit amet consectetur adipisicing elit.
+            </span>  
+         Quod deserunt doloremque, aut unde corporis repudiandae non, voluptatibus repellat quam in ullam a voluptates corrupti harum tenetur, dolores suscipit! Aliquid, minima.
+        </p>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <br>
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter your email">
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        
+        <p> Visit this
+            <a href="https://en.seoultech.ac.kr/">SeoulTech</a>
+            Website
+        </p>
+
+        <div>
+            <p>I am a p inside a div</p>
+            <p>We will have margins</p>
+        </div>
+
+        <ul> My Favorite Fruits
+            <li>Strawberry</li>
+            <li>Mango</li>
+            <ol>
+                <li>Black Grapes</li>
+            </ol>
+        </ul>
+
+        <h1>Content Box</h1>
+        <div class="content">
+            This box has a defined width and height
+        </div>
+
+        <h5 class="padded bordered">This is padded</h5>
+        
     </body>
 </html>

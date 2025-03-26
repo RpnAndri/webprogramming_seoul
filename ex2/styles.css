@@ -1,0 +1,19 @@
+body {
+    background-color: gray;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    color: darkblue;
+}
+
+div.image {
+    width: 500px;
+}
+
+img {
+    width: 100%;
+}
