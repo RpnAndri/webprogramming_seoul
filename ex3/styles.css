@@ -8,14 +8,15 @@ header {
 }
 
 section {
-    background-color: white;
     padding: 20px;
     border: 2px solid red;
 }
 
 article {
+    background-color: white;
     margin: 20px;
     width: 500px;
+    border: 2px solid orange;
 }
 
 button {
