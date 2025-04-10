@@ -1,6 +1,9 @@
 body {
     background-color: antiquewhite;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .head {
@@ -15,4 +18,57 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10;
+}
+
+ol {
+    padding-inline-start: 0;
+}
+
+ol li {
+    list-style-type: none;
+}
+
+.bp-img {
+    max-width: 70%;
+    height: auto; /* Keep aspect ratio */
+}
+
+.bp-p {
+    text-align: left;
+}
+
+.hobby-b, .about-b, .rbtn {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #cce4f8;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-weight: 1000;
+    font-size: 14px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.hobby-b:hover, .about-b:hover, .rbtn:hover {
+    background-color: coral;
+    color: white;
+}
+
+.hobby, .about {
+    margin: 14px;
+}
+
+.other {
+    text-align: center;
+}
+
+#p {
+    overflow-wrap: break-word;
+}
+
+#sound {
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+
 }

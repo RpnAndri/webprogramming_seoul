@@ -5,38 +5,52 @@
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-        <h1 class="head">
-            Welcome to my Personal Blog
-        </h1>
+        <audio id="bg_sound" autoplay>
+            <source src="./bg.mp3" type="audio/wav">
+        </audio>
+        <audio id="jumpscare_sound" autoplay>
+            <source src="./jumpscare.mp3" type="audio/wav">
+        </audio>
 
-        <div class="container">
-            <div class="about">
-                <h3 class="about-title">
-                    About Me
-                </h3>
-                <p class="about-p">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt praesentium doloremque repellendus esse, sapiente, labore minus ea enim illum laborum magnam ullam similique quidem laboriosam iusto molestias, delectus sit at.
-                </p>
-                <ol class="hobbies">
-                </ol>
-                <button class="about-b" onclick="displayAboutMe()">
-                    Know more about me
-                </button>
-            </div>
-            <div class="hobby">
-                <h3 class="hobby-title">
-                    Hobbies
-                </h3>
-                <p class="hobby-p">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ducimus necessitatibus error eius placeat magnam eos totam delectus architecto. Adipisci distinctio sequi itaque! Quis magni tenetur iste aliquid nesciunt earum!
-                </p>
-                <button class="hobby-b" onclick="displayHobbies()">
-                    Reveal the hobbies
-                </button>
+        <div id="all">
+            <h1 class="head">
+                Welcome to my Personal Blog
+            </h1>
+            <div id="rest">
+                <div class="container">
+                    <div class="about">
+                        <h3 class="about-title">
+                            About Me
+                        </h3>
+                        <p class="about-p">
+                            Hi! I'm someone who enjoys staying active, thinking strategically, and connecting with nature. I'm passionate about learning new things, taking on challenges, and spending my time doing what I love—whether that’s on the court, at the chessboard, or with animals.
+                        </p>
+                        <ol class="abouts">
+                        </ol>
+                        <button class="about-b" onclick="displayAboutMe()">
+                            Know more about me
+                        </button>
+                    </div>
+                    <div class="hobby">
+                        <h3 class="hobby-title">
+                            Hobbies
+                        </h3>
+                        <p class="hobby-p">
+                            My hobbies include playing basketball, which keeps me energized and fit; playing chess, where I get to challenge my mind; and spending time with animals, who always brighten my day. Each hobby helps me grow in different ways and brings a lot of joy to my life.                </p>
+                        <ol class="hobbies">
+                        </ol>
+                        <button class="hobby-b" onclick="displayHobbies()">
+                            Reveal the hobbies
+                        </button>
+                    </div>
+                </div>
+                <div class="other">
+                    <h1 id="p-title">Press P</h1>
+                    <p id="p"></p>
+                </div>
             </div>
             
         </div>
-
         
 
 
