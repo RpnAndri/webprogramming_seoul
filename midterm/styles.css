@@ -1,0 +1,95 @@
+body {
+    background-color: antiquewhite;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#form-submission {
+    width: 232px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+a.read-more, button {
+    color: black;
+    border: 2px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #cce4f8;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-weight: 1000;
+    font-size: 14px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+
+a.read-more:hover, button:hover {
+    background-color: coral;
+    color: white;
+}
+
+.head {
+    text-align: center;
+}
+
+.about {
+    display: block;
+}
+
+.container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+ol {
+    padding-inline-start: 0;
+}
+
+ol li {
+    list-style-type: none;
+}
+
+.book-cover {
+    width: 50%;
+    height: auto;
+}
+
+.copyright {
+    text-align: center;
+    bottom: 0;
+    margin: 30px;
+}
+
+.copyright-text {
+    font-size: 12px;
+}
+
+a {
+    text-decoration-line: none;;
+}
+
+.li-form {
+    width: 500px;
+}
+
+.name {
+    margin-right: 32px;
+}
+
+.email {
+    margin-right: 34px;
+}
+
+.text {
+    margin-right: 10px;
+}
+
+.form {
+    margin-left: 100px;
+}
+
+.link {
+    margin-left: 10px;
+}
