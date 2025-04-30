@@ -12,3 +12,14 @@
 .sidebar { grid-area: sidebar; background: lightgray; }
 .main { grid-area: main; background: white; }
 .footer { grid-area: footer; background: lightblue; }
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-areas:
+            "header"
+            "main"
+            "sidebar"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+}
