@@ -1,3 +1,17 @@
+:root {
+    --main-color: lightblue;
+    --secondary-color: lightgray;
+    --accent-color: coral;
+    --font-size: 16px;
+    --padding: 20px;
+    --margin: 10px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
 .grid-container {
     display: grid;
     grid-template-areas: 
@@ -11,13 +25,47 @@
     gap: 10px; /* Adding spaces between grid items */
 
 }
-.header { grid-area: header; background: lightblue; }
-.sidebar { grid-area: sidebar; background: lightgray; }
-.main { grid-area: main; background: white; }
-.footer { grid-area: footer; background: lightblue; }
+.header { 
+    grid-area: header; 
+    background: var(--main-color);
+    padding: var(--padding);
+}
+.sidebar {
+    grid-area: sidebar; 
+    background: var(--secondary-color); 
+    padding: var(--padding);
+    text-align: left;
+}
+.main { 
+    grid-area: main; 
+    background: white; 
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding);
+}
+
+.item {
+    background-color: var(--accent-color);
+    padding: var(--padding);
+    margin: 10px;
+    flex: 1; /*Items will grow equally*/
+}
+
+.footer { 
+    grid-area: footer; 
+    background-color: var(--main-color); 
+    padding: var(--padding);
+    text-align: center;
+}
 
 .header, .sidebar, .main, .footer {
     padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: var(--padding);
 }
 
 
