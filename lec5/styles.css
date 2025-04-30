@@ -81,7 +81,34 @@ body {
 .animated-item:hover {
     background-color: darkorange;
     transform: scale(1.1);
-    animation: pulse 1.5s infinite;
+    animation: pulse 2s infinite;
+}
+
+.nav-item {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.nav-item:hover {
+    background-color: blue;
+    transform: scale(1.2);
+    animation: nav 2s infinite;
+    color: white;
+}
+
+@keyframes nav {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 @keyframes pulse {
