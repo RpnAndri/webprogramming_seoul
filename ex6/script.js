@@ -1,29 +1,45 @@
 class Car {
+    #make;
+    #model;
+    #year;
     constructor(make, model, year) {
-        this.make = make;
-        this.model = model;
-        this.year = year;
+    this.#make = make;
+    this.#model = model;
+    this.#year = year;
+    }
+    getMake() {
+    return this.#make;
+    }
+    getModel() {
+    return this.#model;
     }
     start() {
-        console.log(`${this.make} ${this.model} started.`);
+    console.log(`${this.#make} ${this.#model} started.`);
     }
-}
-
-// Creating instances of Car
-const car1 = new Car('Toyota', 'Camry', 2020);
-const car2 = new Car('Honda', 'Accord', 2021);
-car1.start(); // Should log "Toyota Camry started."
-car2.start(); // Should log "Honda Accord started."
-
-class ElectricCar extends Car {
+    getDetails() {
+    return `${this.#make} ${this.#model}, Year: ${this.#year}`;
+    }
+    }
+    class ElectricCar extends Car {
+    #batteryCapacity;
     constructor(make, model, year, batteryCapacity) {
-        super(make, model, year); // Call the parent class constructor
-        this.batteryCapacity = batteryCapacity;
+    super(make, model, year);
+    this.#batteryCapacity = batteryCapacity;
+    }
+    start() {
+    console.log(`${this.getMake()} ${this.getModel()} (Electric) started silently.`);
     }
     charge() {
-        console.log(`${this.make} ${this.model} is charging.`);
+    console.log(`${this.getDetails()} with battery ${this.#batteryCapacity} is charging.`);
     }
-}
+    }
+    // Instantiate objects
+    const toyota = new Car('Toyota', 'Camry', 2020);
     const tesla = new ElectricCar('Tesla', 'Model S', 2022, '100 kWh');
-    tesla.start(); // Should log "Tesla Model S started."
-    tesla.charge(); // Should log "Tesla Model S is charging."
+    // Add event listeners
+    document.getElementById('showCarDetails').addEventListener('click', () => {
+    document.getElementById('output').innerText = toyota.getDetails();
+    });
+    document.getElementById('showElectricCarDetails').addEventListener('click', () => {
+    document.getElementById('output').innerText = tesla.getDetails();
+    });
