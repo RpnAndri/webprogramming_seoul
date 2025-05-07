@@ -1,18 +1,19 @@
-function showMessage() {
-    var message = "Hello from inside the function!";
-    alert(message);
+function createCounter() {
+    let count = 0;
+    return {
+        increment: function() {
+                count++;
+                // Update the content of the HTML element to display the current count
+                document.getElementById("counterDisplay").innerText = "Count: " + count;
+            }
+        };
+
 }
+const counter = createCounter();
 
-document.getElementById("myButton").addEventListener("click", showMessage);
+    // Get reference to the button and set up the event listener
+document.getElementById("incrementButton").addEventListener("click", function() {
+    counter.increment();
+});
 
-function myOuterFunction() {
-    let secret = "I am a secret message!";
 
-    function myInnerFunction() {
-        console.log(secret);
-    }
-    return myInnerFunction;
-}
-
-const myClosure = myOuterFunction();
-myClosure();
